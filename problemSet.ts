@@ -160,37 +160,19 @@ console.log(newArr);*/
 
 // Function to check if a number is prime
 
-/*function palindromeChecker(Numbers:number):boolean{
-        const arr:number[]=[];
-        var  arrSecond: number[]=[];
-        arr.push(Numbers);
-        console.log(arr);
-        for (let i=arr.length-1; i>=0; i--){
-            arrSecond.push(arr[i]);
-            console.log(arrSecond);
-
-        if(arrSecond !== arr){
-            
-            return true;
-        }else{
-            return false;
-        }
-    }
+function palindromeChecker(Numbers:string):boolean{
+        //const arr= Numbers.toString();
+        const  second= Numbers.split('').reverse().join('');
+       // console.log(arr);
+        console.log(second);
+        return Numbers===second;
+    
 }
+
     
 
-const Palindrome=palindromeChecker(121);
-console.log(Palindrome);*/
+const Palindrome=palindromeChecker('racecar');
+console.log(Palindrome);
 
-function test(): boolean{
-let a=2;
-let b=2;
-if(a==b) {
-return true;
-}else {
-    return false;
-}
-}
-const newTest=test();
-console.log(newTest);
+
 
